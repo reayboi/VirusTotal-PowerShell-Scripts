@@ -23,7 +23,8 @@ $request_url = "https://www.virustotal.com/api/v3/urls/" + $s
 
 $headers = @{}
 $headers.Add("Accept", "application/json")
-$headers.Add("x-apikey", "ea6ed29f201e4b06847e464f8c7e2f173c563dcd2a9e62effe80918ccbfd74b8")
+#Insert your own API KEY below
+$headers.Add("x-apikey", "")
 
 $response = Invoke-WebRequest -Uri $request_url -Method GET -Headers $headers
 
